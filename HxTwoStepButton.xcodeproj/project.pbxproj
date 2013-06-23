@@ -18,6 +18,7 @@
 		62CE9EB9177775B5006B2978 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62CE9EB8177775B5006B2978 /* Default-568h@2x.png */; };
 		62CE9EBC177775B5006B2978 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CE9EBB177775B5006B2978 /* ViewController.m */; };
 		62CE9EBF177775B5006B2978 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62CE9EBD177775B5006B2978 /* ViewController.xib */; };
+		62CE9EC817777660006B2978 /* HxTwoStepButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CE9EC717777660006B2978 /* HxTwoStepButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		62CE9EBA177775B5006B2978 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		62CE9EBB177775B5006B2978 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		62CE9EBE177775B5006B2978 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		62CE9EC617777660006B2978 /* HxTwoStepButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HxTwoStepButton.h; path = HxTwoStepButton/HxTwoStepButton.h; sourceTree = "<group>"; };
+		62CE9EC717777660006B2978 /* HxTwoStepButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HxTwoStepButton.m; path = HxTwoStepButton/HxTwoStepButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 		62CE9EA8177775B5006B2978 /* HxTwoStepButton */ = {
 			isa = PBXGroup;
 			children = (
+				62CE9EC517777618006B2978 /* HxTwoStepButton */,
 				62CE9EB1177775B5006B2978 /* AppDelegate.h */,
 				62CE9EB2177775B5006B2978 /* AppDelegate.m */,
 				62CE9EBA177775B5006B2978 /* ViewController.h */,
@@ -105,6 +109,15 @@
 				62CE9EB8177775B5006B2978 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62CE9EC517777618006B2978 /* HxTwoStepButton */ = {
+			isa = PBXGroup;
+			children = (
+				62CE9EC617777660006B2978 /* HxTwoStepButton.h */,
+				62CE9EC717777660006B2978 /* HxTwoStepButton.m */,
+			);
+			name = HxTwoStepButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +189,7 @@
 				62CE9EAF177775B5006B2978 /* main.m in Sources */,
 				62CE9EB3177775B5006B2978 /* AppDelegate.m in Sources */,
 				62CE9EBC177775B5006B2978 /* ViewController.m in Sources */,
+				62CE9EC817777660006B2978 /* HxTwoStepButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

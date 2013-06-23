@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HxTwoStepButton.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<HxTwoStepButtonDelegate>
+
+@property(nonatomic,retain)  IBOutlet HxTwoStepButton *twoStepButton;
 
 @end
