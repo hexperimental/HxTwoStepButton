@@ -76,6 +76,7 @@
     self.isHot = NO;
     [self setBackgroundColor:self.bufferColor];
     [self setTitle:self.bufferLabel forState:UIControlStateNormal];
+    [self.delegate buttonDidCancelConfirmation:self];
 }
 
 @end

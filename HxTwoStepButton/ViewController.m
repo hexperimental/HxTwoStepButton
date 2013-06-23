@@ -17,7 +17,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.twoStepButton setConfirmationColor:[UIColor yellowColor]];
+
+    
+    self.tsButton = [[HxTwoStepButton alloc] initWithFrame:CGRectMake(10,200,100,30)];
+    [self.tsButton setTitle:@"Touch Me" forState:UIControlStateNormal];
+    
+    [self.tsButton setConfirmationString:@"You Sure?"];
+    [self.tsButton setConfirmationColor:[UIColor blueColor]];
+    [self.tsButton setDelay:5.0];
+    [self.tsButton setDelegate:self];
+    
+    [self.tsButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    [self.view addSubview:self.tsButton];
+    
+    
+    
+    //
+    [self.ibTwoStepButton setConfirmationColor:[UIColor yellowColor]];
+    [self.ibTwoStepButton setDelay:0.5];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -36,6 +56,10 @@
 
 -(void)buttonDidEnterConfirmation:(id)sender{
     NSLog(@"Waiting For confirmation...");
+}
+
+-(void)buttonDidCancelConfirmation:(id)sender{
+    NSLog(@"Confirmation cancelled...");
 }
 
 @end

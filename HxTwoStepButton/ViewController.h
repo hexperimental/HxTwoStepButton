@@ -11,6 +11,8 @@
 
 @interface ViewController : UIViewController<HxTwoStepButtonDelegate>
 
-@property(nonatomic,retain)  IBOutlet HxTwoStepButton *twoStepButton;
+@property(nonatomic,retain)  IBOutlet HxTwoStepButton *ibTwoStepButton;
+
+@property(nonatomic,retain)  HxTwoStepButton *tsButton;
 
 @end

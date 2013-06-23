@@ -22,5 +22,6 @@
 @protocol HxTwoStepButtonDelegate <NSObject>
 
 - (void)buttonDidEnterConfirmation:(id)sender;
+- (void)buttonDidCancelConfirmation:(id)sender;
 
 @end
